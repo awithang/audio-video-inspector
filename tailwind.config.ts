@@ -61,6 +61,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				forensic: {
+					DEFAULT: '#1A2B40', // Deep navy blue
+					foreground: '#F7FAFC', // Light gray for text on dark
+					secondary: '#4A5568', // Steel gray
+					accent: '#3182CE', // Technical blue
+					light: '#F7FAFC', // Light background
+					dark: '#2D3748', // Dark slate for text
+					highlight: '#63B3ED' // Lighter blue for highlights
 				}
 			},
 			borderRadius: {
