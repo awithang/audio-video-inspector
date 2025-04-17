@@ -8,6 +8,8 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import Technologies from "./pages/Technologies";
 import CaseStudies from "./pages/CaseStudies";
+import Resources from "./pages/Resources";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/technologies" element={<Technologies />} />
             <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
