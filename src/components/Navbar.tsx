@@ -1,9 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Search, Menu } from "lucide-react";
 import { useState } from "react";
-// removed ThemeToggle
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +33,6 @@ const Navbar = () => {
             <Button variant="outline" className="border-forensic-accent text-forensic-accent hover:bg-forensic-accent hover:text-white">
               <Search className="w-4 h-4 mr-2" /> Search
             </Button>
-            {/* ThemeToggle removed */}
           </div>
 
           {/* Mobile Menu Button */}

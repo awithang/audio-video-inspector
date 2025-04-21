@@ -16,6 +16,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
+    {/* Set defaultTheme to "dark" and disable system theming */}
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <TooltipProvider>
         <Toaster />
@@ -37,3 +38,4 @@ const App = () => (
 );
 
 export default App;
+

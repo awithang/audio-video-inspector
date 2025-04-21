@@ -16,7 +16,7 @@ const ContactSection = () => {
             <p className="text-lg text-forensic-secondary mb-8 max-w-lg">
               Have questions about audio or video forensics? Need expert consultation for your case? Our team of specialists is ready to assist you.
             </p>
-            
+
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-forensic-accent/10 p-3 rounded-full mr-4">
@@ -28,7 +28,7 @@ const ContactSection = () => {
                   <p className="text-forensic-secondary">support@forensictech.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="bg-forensic-accent/10 p-3 rounded-full mr-4">
                   <Phone className="h-6 w-6 text-forensic-accent" />
@@ -39,7 +39,7 @@ const ContactSection = () => {
                   <p className="text-forensic-secondary">+1 (555) 765-4321</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="bg-forensic-accent/10 p-3 rounded-full mr-4">
                   <MapPin className="h-6 w-6 text-forensic-accent" />
@@ -52,7 +52,7 @@ const ContactSection = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-gray-50 rounded-xl p-8 shadow-sm">
             <h3 className="text-2xl font-bold text-forensic-DEFAULT mb-6">Send Us a Message</h3>
             <form className="space-y-6">
@@ -70,25 +70,21 @@ const ContactSection = () => {
                   <Input id="email" type="email" placeholder="john@example.com" className="border-gray-300" />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block mb-2 text-sm font-medium text-forensic-DEFAULT">
                   Subject
                 </label>
                 <Input id="subject" placeholder="How can we help you?" className="border-gray-300" />
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-forensic-DEFAULT">
                   Message
                 </label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Tell us about your project or inquiry..." 
-                  className="border-gray-300 min-h-[150px]" 
-                />
+                <Textarea id="message" placeholder="Tell us about your project or inquiry..." className="border-gray-300 min-h-[150px]" />
               </div>
-              
+
               <Button className="w-full md:w-auto bg-forensic-DEFAULT hover:bg-forensic-secondary">
                 Send Message
               </Button>
@@ -101,3 +97,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
