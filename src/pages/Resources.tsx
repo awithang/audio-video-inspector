@@ -72,7 +72,7 @@ const ResourceCard = ({ resource }: { resource: typeof resources[0] }) => {
   const Icon = resource.icon;
   
   return (
-    <Card className="h-full border-0 shadow-md hover:shadow-lg transition-shadow">
+    <Card className="h-full border-0 shadow-md hover:shadow-lg transition-shadow bg-card">
       <CardHeader className="pb-2">
         <div className="mb-3 w-12 h-12 rounded-full bg-forensic-accent/10 flex items-center justify-center text-forensic-accent">
           <Icon size={24} />
@@ -100,23 +100,23 @@ const ResourceCard = ({ resource }: { resource: typeof resources[0] }) => {
 
 const Resources = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-1">
-        <section className="py-16 bg-gradient-to-b from-forensic-DEFAULT to-forensic-secondary">
+        <section className="py-16 bg-gradient-to-b from-[#1A1F2C] to-forensic-secondary">
           <div className="container mx-auto px-4">
-            <div className="text-center text-white">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <div className="text-center text-forensic-light">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                 Forensic Resources
               </h1>
-              <p className="text-lg max-w-3xl mx-auto opacity-90">
+              <p className="text-lg max-w-3xl mx-auto opacity-90 text-gray-200">
                 Access our collection of guides, research papers, software tools, and educational materials for audio and video forensic professionals.
               </p>
             </div>
           </div>
         </section>
         
-        <section className="py-16">
+        <section className="py-16 bg-[#23283a]">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {resources.map((resource, index) => (

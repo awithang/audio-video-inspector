@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Search, Menu } from "lucide-react";
 import { useState } from "react";
-import { ThemeToggle } from "@/components/ThemeToggle";
+// removed ThemeToggle
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-forensic-DEFAULT text-white py-4 shadow-md sticky top-0 z-50">
+    <nav className="bg-[#1A1F2C] text-white py-4 shadow-md sticky top-0 z-50"> {/* solid dark bg */}
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -35,7 +35,7 @@ const Navbar = () => {
             <Button variant="outline" className="border-forensic-accent text-forensic-accent hover:bg-forensic-accent hover:text-white">
               <Search className="w-4 h-4 mr-2" /> Search
             </Button>
-            <ThemeToggle />
+            {/* ThemeToggle removed */}
           </div>
 
           {/* Mobile Menu Button */}
