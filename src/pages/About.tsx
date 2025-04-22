@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { 
-  Card, 
-  CardContent, 
-  CardDescription, 
-  CardHeader, 
-  CardTitle 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
 } from "@/components/ui/card";
 import { Building, MapPin, Trophy, Users, Award, BookOpen } from "lucide-react";
 
@@ -30,7 +30,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        
+
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -83,10 +83,10 @@ const About = () => {
               </div>
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" 
-                    alt="ForensicTech headquarters" 
-                    className="w-full h-auto object-cover" 
+                  <img
+                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80"
+                    alt="ForensicTech headquarters"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg flex items-center gap-3">
@@ -100,7 +100,7 @@ const About = () => {
 
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-forensic-DEFAULT mb-12 text-center">Our Leadership Team</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Our Leadership Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {

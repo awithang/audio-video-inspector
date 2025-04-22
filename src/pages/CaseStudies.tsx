@@ -78,9 +78,9 @@ const CaseStudies = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="md:w-1/2">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80" 
-                  alt="Featured Case Study" 
+                <img
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80"
+                  alt="Featured Case Study"
                   className="rounded-xl shadow-lg w-full h-auto object-cover"
                 />
               </div>
@@ -90,7 +90,7 @@ const CaseStudies = () => {
                     Featured Case
                   </span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-forensic-DEFAULT mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                   Audio Tampering Detection in Legal Evidence
                 </h2>
                 <p className="text-lg text-forensic-secondary mb-6">
@@ -99,7 +99,7 @@ const CaseStudies = () => {
                 <p className="text-forensic-secondary mb-8">
                   Our findings revealed that specific sections of the recording had been spliced together from different sources, altering the context of the conversation. This discovery was pivotal in the case, leading to the evidence being dismissed and a reconsideration of other testimonies.
                 </p>
-                <Button className="bg-forensic-DEFAULT hover:bg-forensic-secondary">
+                <Button className="bg-gray-800 hover:bg-forensic-secondary">
                   Read Full Case Study <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
@@ -111,20 +111,20 @@ const CaseStudies = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-forensic-DEFAULT mb-4">More Case Studies</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">More Case Studies</h2>
               <p className="text-lg text-forensic-secondary max-w-3xl mx-auto">
                 Explore our portfolio of successful forensic analysis projects across a variety of scenarios and challenges.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {caseStudies.map((study, index) => (
                 <Card key={index} className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="h-48 overflow-hidden">
-                    <img 
-                      src={study.image} 
-                      alt={study.title} 
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                    <img
+                      src={study.image}
+                      alt={study.title}
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                     />
                   </div>
                   <CardHeader className="pb-2">
