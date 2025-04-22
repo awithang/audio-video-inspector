@@ -58,7 +58,7 @@ const TechnologiesSection = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-forensic-DEFAULT mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Forensic Technologies
           </h2>
           <p className="text-lg text-forensic-secondary max-w-3xl mx-auto">
@@ -74,13 +74,12 @@ const TechnologiesSection = () => {
             >
               <CardHeader className="pb-2">
                 <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${
-                    tech.category === "audio"
-                      ? "bg-blue-100 text-blue-600"
-                      : tech.category === "video"
+                  className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 ${tech.category === "audio"
+                    ? "bg-blue-100 text-blue-600"
+                    : tech.category === "video"
                       ? "bg-green-100 text-green-600"
                       : "bg-purple-100 text-purple-600"
-                  }`}
+                    }`}
                 >
                   <tech.icon size={24} />
                 </div>
